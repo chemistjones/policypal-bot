@@ -7,5 +7,3 @@ A technical chatbot that uses retrieval-augmented generation (RAG) to answer emp
 - Chunking + embedding using LangChain
 - Vector store with FAISS
 - Simple CLI for querying
-
-## Project Structure
