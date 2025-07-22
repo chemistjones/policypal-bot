@@ -9,15 +9,15 @@ import os
 load_dotenv()
 
 def build_vector_store(doc_dir: str, persist_path: str = "vector_index"):
-    # Step 1: Load and split documents
+    # Load and split documents
     raw_docs = load_documents_from_directory(doc_dir)
     docs = split_documents(raw_docs)
 
-    # Step 2: Embed and store
+    # Embed and store
     embeddings = OpenAIEmbeddings()
     vector_store = FAISS.from_documents(docs, embeddings)
 
-    # Step 3: Save to disk
+    # Save vector store to disk
     vector_store.save_local(persist_path)
     print(f"Vector store saved to: {persist_path}")
 
