@@ -1,0 +1,6 @@
+AcmeTech Manufacturing Safety Protocol
+
+1. PPE (Personal Protective Equipment) must be worn at all times on the factory floor.
+2. Lockout/Tagout procedures are mandatory before maintenance.
+3. Emergency exits must remain clear.
+4. Report incidents immediately to Safety Coordinator.

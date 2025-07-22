@@ -1,0 +1,11 @@
+metadata_policy:
+  required_tags: [project_name, owner, data_classification]
+  tag_format: snake_case
+retention_policy:
+  default_retention: 5 years
+  exceptions:
+    - financial_data: 7 years
+    - temporary_logs: 30 days
+schema_policy:
+  naming_convention: camelCase
+  required_fields: [createdAt, updatedAt]
